@@ -6,33 +6,36 @@ const HeaderComp = ({ post }) => {
   // const categoryColors = ['bg-teal-500', 'bg-amber-500']
   return (
     <>
-      <div className='mx-[80px]'>
-        <div className=' grid grid-cols-11 gap-[50px] max-w-7xl  mx-auto items-end mb-[120px] mt-[20px]'>
-          <div className='col-span-9 aspect-[1.6]'>
-            <img
-              className='object-center object-cover block'
-              src={post?.pageHeader?.coverImage?.url}
-              style={{
-                width: '100%',
-                height: '100%',
-              }}
-            />
-          </div>
-          <div className='col-span-2'>
-            <h1 className='text-5xl mb-[20px]'>{post?.pageHeader?.title}</h1>
+      <div className='flex justify-center	'>
+        <div className='max-w-[1200px] mx-[50px]'>
+          {/* <div className=' grid grid-cols-11 gap-[50px]  items-end mb-[120px] mt-[20px] max-h-[50%]'> */}
+          <div className='flex gap-[50px]  items-end mb-[120px] mt-[20px] h-[calc(100vh-120px)] '>
+            <div className='h-full'>
+              <img
+                className='object-center object-cover block'
+                src={post.pageHeader.coverImage.url}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                }}
+              />
+            </div>
+            <div className='min-w-[150px]	'>
+              <h1 className='text-5xl mb-[20px]'>{post.pageHeader.title}</h1>
 
-            <div className='flex flex-row gap-[15px] '>
-              <p className='leading-4'>
-                {moment(post?.pageHeader?.articleCreatedDate).format(
-                  'MMM DD, YYYY'
-                )}
-              </p>
-              <p className='leading-4'>|</p>
-              <p className='leading-4'>
-                {post?.categories?.map((category) => (
-                  <span key={category?.name}>{`${category?.name} `}</span>
-                ))}
-              </p>
+              <div className='flex flex-row gap-[15px] '>
+                <p className='leading-4'>
+                  {moment(post.pageHeader.articleCreatedDate).format(
+                    'MMM DD, YYYY'
+                  )}
+                </p>
+                <p className='leading-4'>|</p>
+                <p className='leading-4'>
+                  {post.categories.map((category) => (
+                    <span key={category.name}>{`${category.name} `}</span>
+                  ))}
+                </p>
+              </div>
             </div>
           </div>
         </div>

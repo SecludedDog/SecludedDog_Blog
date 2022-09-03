@@ -14,7 +14,7 @@ const TocHorizontal = () => {
   const [fixed, setFixed] = useState(false)
 
   const controlNavbar = () => {
-    if (window.scrollY > 800) {
+    if (window.scrollY > 700) {
       setFixed(true)
     } else {
       setFixed(false)
