@@ -7,7 +7,7 @@ const HeaderComp = ({ post }) => {
   return (
     <>
       <div className='mx-[80px]'>
-        <div className='pageHeader grid grid-cols-11 gap-[50px] max-w-7xl  mx-auto items-end mb-[120px] mt-[20px]'>
+        <div className=' grid grid-cols-11 gap-[50px] max-w-7xl  mx-auto items-end mb-[120px] mt-[20px]'>
           <div className='col-span-9 aspect-[1.6]'>
             <img
               className='object-center object-cover block'
