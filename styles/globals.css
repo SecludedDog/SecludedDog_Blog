@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --framer-aspect-ratio-supported: auto;
+}
+
+/* .display-linebreak {
+  white-space: pre-line;
+} */
+
+#gallery,
+#overview,
+#info {
+  scroll-margin-top: 120px;
+}
+
+/* Safari-only */
+@supports (-webkit-hyphens: none) {
+  #gallery,
+  #overview,
+  #info {
+    padding-top: 120px;
+    margin-top: -120px;
+  }
+}
+
+p {
+  line-height: 1.625rem;
+}
+
+.heightTest {
+  height: var(--framer-aspect-ratio-supported, 475px);
+}
+
+.twophotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.divider {
+  overflow: hidden;
+  text-align: center;
+}
+
+.divider:before,
+.divider:after {
+  background-color: #eaeaea;
+  content: '';
+  display: inline-block;
+  height: 1.5px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  top: -0.3em;
+}
+
+.divider:before {
+  right: 0.5em;
+
+  margin-left: -50%;
+}
+
+.divider:after {
+  left: 0.5em;
+
+  margin-right: -50%;
+}
+
+.divider {
+  display: inline-block;
+}
+
+.transitionCss {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
