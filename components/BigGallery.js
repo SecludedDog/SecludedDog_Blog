@@ -10,7 +10,7 @@ const BigGallery = ({ post }) => {
     Aos.init({ duration: 800 })
   }, [])
   return (
-    <div className='max-w-7xl mx-[80px] mt-[200px]' id='gallery'>
+    <div className='max-w-[85%] mx-auto mt-[200px]' id='gallery'>
       {post.bigGallery.map((item) => (
         <div
           className='grid-cols-6 grid mb-[80px] gap-[80px] items-top	'

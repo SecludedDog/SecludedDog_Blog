@@ -81,8 +81,8 @@ const TocHorizontal = () => {
 
   return (
     <div
-      className={`w-[500px] mx-auto flex justify-center items-center h-[72px] bg-white gap-[60px] text-lg text-gray-400 z-40 transition-all duration-300 ${
-        fixed && 'sticky top-0 text-sm'
+      className={`w-[500px] mx-auto flex justify-center items-center h-[72px] bg-white gap-[60px] text-lg text-gray-400 z-40 transition ease-in-out	 duration-700 ${
+        fixed && 'sticky top-0  transition ease-in-out	 duration-700 scale-75	'
       } ${isModal ? 'opacity-0' : ''}`}
       id='inlineNav'
     >
@@ -91,7 +91,7 @@ const TocHorizontal = () => {
       <TocItem tag='info' tagId='#info'></TocItem> */}
 
       <div
-        className={`group ${
+        className={`group transition-all ease-in-out duration-700 ${
           activeId === 'overview' &&
           'text-gray-900 transition-all ease-in-out duration-700'
         }`}
@@ -118,7 +118,7 @@ const TocHorizontal = () => {
       </div>
 
       <div
-        className={`group ${
+        className={`group transition-all ease-in-out duration-700 ${
           activeId === 'gallery' &&
           'text-gray-900 transition-all ease-in-out duration-700'
         }`}
@@ -145,7 +145,7 @@ const TocHorizontal = () => {
       </div>
 
       <div
-        className={`group ${
+        className={`group transition-all ease-in-out duration-700 ${
           activeId === 'info' &&
           'text-gray-900 transition-all ease-in-out duration-700'
         }`}
