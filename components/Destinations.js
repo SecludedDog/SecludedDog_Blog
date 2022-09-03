@@ -16,8 +16,11 @@ const Destinations = ({ post }) => {
     >
       <InfoHeader infoText='地图'></InfoHeader>
 
-      <div className='mb-[20px] h-full flex justify-center h-[calc(100vh-200px)] aspect-{1.828} '>
-        <img className='' src={post.destinations[0].destinationMap.url}></img>
+      <div className='mb-[20px] h-full flex justify-center h-[calc(100vh-200px)] '>
+        <img
+          className='aspect-[1.82] object-contain	'
+          src={post.destinations[0].destinationMap.url}
+        ></img>
       </div>
     </div>
   )
