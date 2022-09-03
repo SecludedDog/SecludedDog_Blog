@@ -9,7 +9,7 @@ const HeaderComp = ({ post }) => {
       <div className='flex justify-center	'>
         <div className='max-w-[1600px] mx-[80px]'>
           {/* <div className=' grid grid-cols-11 gap-[50px]  items-end mb-[120px] mt-[20px] max-h-[50%]'> */}
-          <div className='flex gap-[50px]  items-end mb-[120px] mt-[20px] h-[calc(100vh-120px)] '>
+          <div className='flex gap-[50px]  items-end mb-[120px] mt-[20px] h-[calc(100vh-150px)] '>
             <div className='h-full'>
               <img
                 className='object-center object-cover block'
