@@ -47,7 +47,7 @@ export default function SinglePost({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = await getPostDetails(params.slug)
+  const post = (await getPostDetails(params.slug)) || []
   return {
     props: { post },
   }
@@ -57,6 +57,6 @@ export async function getStaticPaths() {
   const posts = await getPosts()
   return {
     paths: posts.map(({ slug }) => ({ params: { slug } })),
-    fallback: true,
+    fallback: false,
   }
 }
