@@ -21,19 +21,16 @@ export default function SinglePost({ post }) {
   //       setPosts(newPosts)
   //     })
   //   }, [])
-  console.log(post)
+  console.log(post.pageHeader)
 
   useEffect(() => {
     Aos.init({ duration: 800 })
   }, [])
   return (
     <div className='w-screen text-sm text-gray-600'>
-      {/* <div className='col-span-6 col-start-2'> */}
-      {/* <p>{post.overview}</p> */}
-      {/* <HeaderComp></HeaderComp> */}
       <NavBar></NavBar>
       <main>
-        <HeaderComp post={post}></HeaderComp>
+        {/* <HeaderComp post={post}></HeaderComp> */}
         <TocHorizontal></TocHorizontal>
         <Overview post={post}></Overview>
         <BigGallery post={post}></BigGallery>

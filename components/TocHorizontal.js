@@ -47,7 +47,7 @@ const TocHorizontal = () => {
   const { nestedHeadings } = useHeadingsData()
 
   useIntersectionObserver(setActiveId)
-  console.log(activeId)
+  // console.log(activeId)
   const TocItem = ({ tag, tagId }) => {
     return (
       <div
@@ -183,7 +183,7 @@ const getNestedHeadings = (headingElements) => {
     const { innerText: title, id } = heading
     nestedHeadings.push({ id, title, items: [] })
   })
-  console.log(nestedHeadings)
+  // console.log(nestedHeadings)
   return nestedHeadings
 }
 

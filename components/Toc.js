@@ -24,8 +24,8 @@ const useHeadingsData = () => {
 }
 
 const getNestedHeadings = (headingElements) => {
-  console.log(`this is headingElements ${headingElements}`)
-  console.log(headingElements)
+  // console.log(`this is headingElements ${headingElements}`)
+  // console.log(headingElements)
   const nestedHeadings = []
   headingElements.forEach((heading, index) => {
     const { innerText: title, id } = heading
