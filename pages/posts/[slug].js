@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { getPostDetails, getPosts } from '../../services'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-// import HeaderComp from '../../components/HeaderComp'
+import HeaderComp from '../../components/HeaderComp'
 import NavBar from '../../components/NavBar'
 // import Overview from '../../components/Overview'
 // import TocHorizontal from '../../components/TocHorizontal'
@@ -29,6 +29,7 @@ export default function SinglePost({ post }) {
   return (
     <div className='w-screen text-sm text-gray-600'>
       <NavBar></NavBar>
+      <HeaderComp post={post}></HeaderComp>
       {/* <main>
         <HeaderComp post={post}></HeaderComp>
         <TocHorizontal></TocHorizontal>

@@ -11,7 +11,7 @@ const HeaderComp = ({ post }) => {
           <div className='col-span-9 aspect-[1.6]'>
             <img
               className='object-center object-cover block'
-              src={post.pageHeader.coverImage.url}
+              src={post?.pageHeader?.coverImage?.url}
               style={{
                 width: '100%',
                 height: '100%',
@@ -19,18 +19,18 @@ const HeaderComp = ({ post }) => {
             />
           </div>
           <div className='col-span-2'>
-            <h1 className='text-5xl mb-[20px]'>{post.pageHeader.title}</h1>
+            <h1 className='text-5xl mb-[20px]'>{post?.pageHeader?.title}</h1>
 
             <div className='flex flex-row gap-[15px] '>
               <p className='leading-4'>
-                {moment(post.pageHeader.articleCreatedDate).format(
+                {moment(post?.pageHeader?.articleCreatedDate).format(
                   'MMM DD, YYYY'
                 )}
               </p>
               <p className='leading-4'>|</p>
               <p className='leading-4'>
-                {post.categories.map((category) => (
-                  <span key={category.name}>{`${category.name} `}</span>
+                {post?.categories?.map((category) => (
+                  <span key={category?.name}>{`${category?.name} `}</span>
                 ))}
               </p>
             </div>
