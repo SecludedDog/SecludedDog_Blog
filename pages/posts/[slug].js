@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { getPostDetails, getPosts } from '../../services'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -21,7 +21,7 @@ export default function SinglePost({ post }) {
   //       setPosts(newPosts)
   //     })
   //   }, [])
-  console.log(post.pageHeader)
+  // console.log(post.pageHeader)
 
   useEffect(() => {
     Aos.init({ duration: 800 })
