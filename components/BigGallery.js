@@ -11,7 +11,7 @@ const BigGallery = ({ post }) => {
   }, [])
   return (
     <div className='flex justify-center	 mt-[200px]' id='gallery'>
-      <div className='max-w-[1200px] mx-[50px]'>
+      <div className='max-w-[1600px] mx-[80px]'>
         {post.bigGallery.map((item) => (
           <div
             className='grid-cols-6 grid mb-[80px] gap-[80px] items-top	'

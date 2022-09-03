@@ -110,7 +110,7 @@ const NavBar = () => {
             <div className='flex flex-col items-center'>
               <div className='bg-gray-900 h-[3px] w-[40px] mb-[15px]'></div>
               <p className='text-lg font-medium	'>CONTACT US</p>
-              <p className='mt-[30px]'>Email: xiadayu@gmail.com</p>
+              <p className='mt-[30px]'>Email: xiadayu2022@gmail.com</p>
               <p>WeChat: Cigarmoni</p>
             </div>
           </div>
