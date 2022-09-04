@@ -4,8 +4,8 @@ import Divider from './Divider'
 
 const Overview = ({ post }) => {
   return (
-    <div id='overview'>
-      <div className='mx-auto max-w-[750px] mt-[80px]'>
+    <div id='overview' className=' flex justify-center '>
+      <div className='md:mx-[80px] md:max-w-[750px] md:mt-[80px] min-w-0	mx-[30px]'>
         <div>
           <RichText
             content={post.richtext.raw}

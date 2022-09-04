@@ -27,22 +27,24 @@ export default function SinglePost({ post }) {
     Aos.init({ duration: 800 })
   }, [])
   return (
-    <div className='w-screen text-sm text-gray-600'>
-      <NavBar></NavBar>
-      <main>
-        <HeaderComp post={post}></HeaderComp>
-        <TocHorizontal></TocHorizontal>
-        <Overview post={post}></Overview>
-        <BigGallery post={post}></BigGallery>
-        <Info post={post}></Info>
-      </main>
-      {/* </div> */}
-      {/* <div className='pt-10'>
+    <body>
+      <div className='w-screen text-sm text-gray-600'>
+        <NavBar></NavBar>
+        <main>
+          <HeaderComp post={post}></HeaderComp>
+          <TocHorizontal></TocHorizontal>
+          <Overview post={post}></Overview>
+          <BigGallery post={post}></BigGallery>
+          <Info post={post}></Info>
+        </main>
+        {/* </div> */}
+        {/* <div className='pt-10'>
         <aside className='col-span-1 overflow-auto sticky top-0'>
-          { <Toc></Toc> }
+        { <Toc></Toc> }
         </aside>
       </div> */}
-    </div>
+      </div>
+    </body>
   )
 }
 
