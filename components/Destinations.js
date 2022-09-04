@@ -3,13 +3,15 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Image from 'next/image'
 import InfoHeader from './InfoHeader'
-import mediumZoom from 'medium-zoom'
+// import mediumZoom from 'medium-zoom'
 import ImageZoom from './ImageZoom'
 
 const Destinations = ({ post }) => {
   useEffect(() => {
     Aos.init({ duration: 800 })
   }, [])
+  const mediumZoom =
+    typeof window !== 'undefined' ? require('medium-zoom').default : () => {}
   const zoom = React.useRef(mediumZoom())
   return (
     <div
