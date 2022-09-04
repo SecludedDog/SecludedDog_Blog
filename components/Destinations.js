@@ -3,16 +3,24 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Image from 'next/image'
 import InfoHeader from './InfoHeader'
-// import mediumZoom from 'medium-zoom'
-import ImageZoom from './ImageZoom'
+import mediumZoom from 'medium-zoom'
+// import ImageZoom from './ImageZoom'
+
+import dynamic from 'next/dynamic'
+const ImageZoom = dynamic(() => import('./ImageZoom'), {
+  ssr: false,
+})
+
+// const mediumZoom = require('medium-zoom')
 
 const Destinations = ({ post }) => {
   useEffect(() => {
     Aos.init({ duration: 800 })
   }, [])
-  const mediumZoom =
-    typeof window !== 'undefined' ? require('medium-zoom').default : () => {}
-  const zoom = React.useRef(mediumZoom())
+
+  // const zoom = React.useRef(mediumZoom())
+  const zoom = typeof window !== 'undefined' && React.useRef(mediumZoom())
+
   return (
     <div
       data-aos='fade'
