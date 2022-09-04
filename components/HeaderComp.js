@@ -10,8 +10,8 @@ const HeaderComp = ({ post }) => {
         <div className='lg:max-w-[1600px] lg:mx-[80px]'>
           {/* <div className=' grid grid-cols-11 gap-[50px]  items-end mb-[120px] mt-[20px] max-h-[50%]'> */}
           <div
-            className='flex  mb-[120px] mt-[20px] flex-col-reverse 
-                      lg:items-end lg:h-[calc(100vh-150px)] lg:max-h-[833px] lg:flex-row lg:gap-[50px]'
+            className='flex  lg:mb-[120px] mb-[50px] mt-[20px] flex-col-reverse 
+                      lg:items-end h-[calc(100vh-150px)] lg:max-h-[833px] lg:flex-row lg:gap-[50px]'
           >
             <div className='h-full mt-[50px] lg:mt-0'>
               <img

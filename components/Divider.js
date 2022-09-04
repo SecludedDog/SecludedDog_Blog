@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Divider = () => {
   return (
-    <div className='flex justify-center mt-[150px] mb-[150px]'>
+    <div className='flex justify-center lg:mt-[150px] lg:mb-[150px] mb-[50px] mt-[50px]'>
       <div className='divider  w-[450px]'>
         <FontAwesomeIcon
           className='text-gray-300 text-xl'

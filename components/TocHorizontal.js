@@ -14,7 +14,7 @@ const TocHorizontal = () => {
   const [fixed, setFixed] = useState(false)
 
   const controlNavbar = () => {
-    if (window.scrollY > 700) {
+    if (window.scrollY > window.innerHeight) {
       setFixed(true)
     } else {
       setFixed(false)
@@ -81,94 +81,100 @@ const TocHorizontal = () => {
 
   return (
     <div
-      className={`w-[500px] mx-auto flex justify-center items-center h-[72px] bg-white gap-[60px] text-lg text-gray-400 z-40 transition ease-in-out	 duration-700 ${
-        fixed && 'sticky top-0  transition ease-in-out	 duration-700 scale-75	'
-      } ${isModal ? 'opacity-0' : ''}`}
-      id='inlineNav'
+      className={`z-40 ${
+        fixed && 'sticky top-0 transition ease-in-out	 duration-700'
+      }`}
     >
-      {/* <TocItem tag='overview' tagId='#overview'></TocItem>
+      <div
+        className={`lg:w-[500px] bg-white w-screen  lg:text-lg lg:h-[72px] lg:mb-0 text-xs mx-auto flex justify-center items-center  h-[50px] mb-[10px] gap-[60px]  text-gray-400 transition ease-in-outduration-700 ${
+          fixed && ' transition ease-in-out	 duration-700 lg:scale-75	'
+        } ${isModal ? 'opacity-0' : ''}`}
+        id='inlineNav'
+      >
+        {/* <TocItem tag='overview' tagId='#overview'></TocItem>
       <TocItem tag='gallery' tagId='#gallery'></TocItem>
       <TocItem tag='info' tagId='#info'></TocItem> */}
 
-      <div
-        className={`group transition-all ease-in-out duration-700 ${
-          activeId === 'overview' &&
-          'text-gray-900 transition-all ease-in-out duration-700'
-        }`}
-      >
-        <a
-          href='#overview'
-          className='mb-[10px] block'
-          onClick={(e) => {
-            e.preventDefault()
-            document.querySelector('#overview').scrollIntoView({
-              behavior: 'smooth',
-            })
-          }}
-        >
-          OVERVIEW
-        </a>
         <div
-          className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
+          className={`group transition-all ease-in-out duration-700 ${
+            activeId === 'overview' &&
+            'text-gray-900 transition-all ease-in-out duration-700'
+          }`}
+        >
+          <a
+            href='#overview'
+            className='mb-[10px] block'
+            onClick={(e) => {
+              e.preventDefault()
+              document.querySelector('#overview').scrollIntoView({
+                behavior: 'smooth',
+              })
+            }}
+          >
+            OVERVIEW
+          </a>
+          <div
+            className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
         group-hover:transition-width group-hover:ease-in-out group-hover:duration-700 group-hover:w-[24px] ${
           activeId === 'overview' &&
           'w-[24px] bg-gray-800 transition-all ease-in-out duration-700 '
         }`}
-        ></div>
-      </div>
+          ></div>
+        </div>
 
-      <div
-        className={`group transition-all ease-in-out duration-700 ${
-          activeId === 'gallery' &&
-          'text-gray-900 transition-all ease-in-out duration-700'
-        }`}
-      >
-        <a
-          href='#gallery'
-          className='mb-[10px] block scroll-mt-[200px]'
-          onClick={(e) => {
-            e.preventDefault()
-            document.querySelector('#gallery').scrollIntoView({
-              behavior: 'smooth',
-            })
-          }}
-        >
-          GALLERY
-        </a>
         <div
-          className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
+          className={`group transition-all ease-in-out duration-700 ${
+            activeId === 'gallery' &&
+            'text-gray-900 transition-all ease-in-out duration-700'
+          }`}
+        >
+          <a
+            href='#gallery'
+            className='mb-[10px] block scroll-mt-[200px]'
+            onClick={(e) => {
+              e.preventDefault()
+              document.querySelector('#gallery').scrollIntoView({
+                behavior: 'smooth',
+              })
+            }}
+          >
+            GALLERY
+          </a>
+          <div
+            className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
         group-hover:transition-width group-hover:ease-in-out group-hover:duration-700 group-hover:w-[24px] ${
           activeId === 'gallery' &&
           'w-[24px] bg-gray-800 transition-all ease-in-out duration-700 '
         }`}
-        ></div>
-      </div>
+          ></div>
+        </div>
 
-      <div
-        className={`group transition-all ease-in-out duration-700 ${
-          activeId === 'info' &&
-          'text-gray-900 transition-all ease-in-out duration-700'
-        }`}
-      >
-        <a
-          href='#info'
-          className='mb-[10px] block scroll-mt-[200px]'
-          onClick={(e) => {
-            e.preventDefault()
-            document.querySelector('#info').scrollIntoView({
-              behavior: 'smooth',
-            })
-          }}
-        >
-          INFO
-        </a>
         <div
-          className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
+          className={`group transition-all ease-in-out duration-700 ${
+            activeId === 'info' &&
+            'text-gray-900 transition-all ease-in-out duration-700'
+          }`}
+        >
+          <a
+            href='#info'
+            className='mb-[10px] block scroll-mt-[200px]'
+            onClick={(e) => {
+              e.preventDefault()
+              document.querySelector('#info').scrollIntoView({
+                behavior: 'smooth',
+              })
+            }}
+          >
+            INFO
+          </a>
+          <div
+            className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
         group-hover:transition-width group-hover:ease-in-out group-hover:duration-700 group-hover:w-[24px] ${
           activeId === 'info' &&
           'w-[24px] bg-gray-800 transition-all ease-in-out duration-700 '
         }`}
-        ></div>
+          ></div>
+        </div>
       </div>
     </div>
   )
@@ -218,7 +224,7 @@ const useIntersectionObserver = (setActiveId) => {
     }
 
     const observer = new IntersectionObserver(callback, {
-      rootMargin: '0px 0px -40% 0px',
+      rootMargin: '-20% 0px -40% 0px',
     })
 
     const headingElements = Array.from(

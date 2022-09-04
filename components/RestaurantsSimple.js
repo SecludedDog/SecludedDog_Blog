@@ -20,7 +20,7 @@ const RestaurantsSimple = ({ post }) => {
       className='mx-auto max-w-[750px] mb-[300px]'
     >
       <InfoHeader infoText='吃吃喝喝逛逛'></InfoHeader>
-      <div className='grid grid-cols-2 gap-x-[100px] gap-y-[40px] mt-[100px]'>
+      <div className='grid lg:grid-cols-2 grid-cols-1 gap-x-[100px] gap-y-[40px] lg:mt-[100px] mt-[50px] mx-[30px] lg:mx-0'>
         {post.restaurants.map(
           (item) =>
             item.restaurantName && (

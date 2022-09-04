@@ -12,16 +12,16 @@ const Transport = ({ post }) => {
     <div
       data-aos='fade'
       data-aos-offset={50}
-      className='mx-auto max-w-[750px] mb-[200px]'
+      className='mx-auto max-w-[750px] lg:mb-[200px] mb-[100px]'
     >
       <InfoHeader infoText='到达指南'></InfoHeader>
       <div>
         <img
-          className='w-[350px] mx-auto mb-[20px]'
+          className='w-[350px] mx-auto mb-[20px] mt-[20px] lg:mt-0'
           src={post.transport.map.url}
         ></img>
       </div>
-      <div>
+      <div className='mx-[30px] lg:mx-0'>
         <RichText
           content={post.transport.richText.raw}
           renderers={{

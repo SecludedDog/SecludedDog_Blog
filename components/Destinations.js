@@ -12,13 +12,13 @@ const Destinations = ({ post }) => {
     <div
       data-aos='fade'
       data-aos-offset={50}
-      className='mb-[200px] mx-[80px] max-w-[1600px] mt-[150px]'
+      className='lg:mb-[200px] mb-[100px] lg:mx-[80px] max-w-[1600px] lg:mt-[150px] mt-[20px]'
     >
       <InfoHeader infoText='地图'></InfoHeader>
 
-      <div className='mb-[20px] h-full flex justify-center h-[calc(100vh-200px)] '>
+      <div className='mb-[20px] flex justify-center lg:h-[calc(100vh-200px)] mt-[20px] lg:mt-0 '>
         <img
-          className='aspect-[1.82] object-contain	'
+          className='aspect-[1.82] object-contain	w-screen'
           src={post.destinations[0].destinationMap.url}
         ></img>
       </div>
