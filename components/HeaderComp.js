@@ -10,10 +10,10 @@ const HeaderComp = ({ post }) => {
         <div className='lg:max-w-[1600px] lg:mx-[80px]'>
           {/* <div className=' grid grid-cols-11 gap-[50px]  items-end mb-[120px] mt-[20px] max-h-[50%]'> */}
           <div
-            className='flex gap-[50px] mb-[120px] mt-[20px] flex-col-reverse 
-                      lg:items-end lg:h-[calc(100vh-150px)] lg:max-h-[833px] lg:flex-row'
+            className='flex  mb-[120px] mt-[20px] flex-col-reverse 
+                      lg:items-end lg:h-[calc(100vh-150px)] lg:max-h-[833px] lg:flex-row lg:gap-[50px]'
           >
-            <div className='h-full'>
+            <div className='h-full mt-[50px] lg:mt-0'>
               <img
                 className='object-center object-cover block'
                 src={post.pageHeader.coverImage.url}
@@ -24,7 +24,9 @@ const HeaderComp = ({ post }) => {
               />
             </div>
             <div className='min-w-[200px]	flex items-center	flex-col lg:items-start'>
-              <h1 className='text-5xl mb-[20px]'>{post.pageHeader.title}</h1>
+              <h1 className='lg:text-5xl mb-[20px] text-3xl'>
+                {post.pageHeader.title}
+              </h1>
 
               <div className='flex flex-row gap-[15px] '>
                 <p className='leading-4'>
