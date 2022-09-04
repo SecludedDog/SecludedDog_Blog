@@ -38,8 +38,8 @@
     #gallery,
     #overview,
     #info {
-      padding-top: 120px;
-      margin-top: -120px;
+      /* padding-top: 120px; */
+      margin-top: 120px;
     }
   }
 }
@@ -94,3 +94,8 @@ p {
 /* body {
   overflow-x: hidden;
 } */
+
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+  z-index: 999;
+}

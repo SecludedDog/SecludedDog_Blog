@@ -3,11 +3,14 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Image from 'next/image'
 import InfoHeader from './InfoHeader'
+import mediumZoom from 'medium-zoom'
+import ImageZoom from './ImageZoom'
 
 const Destinations = ({ post }) => {
   useEffect(() => {
     Aos.init({ duration: 800 })
   }, [])
+  const zoom = React.useRef(mediumZoom())
   return (
     <div
       data-aos='fade'
@@ -17,10 +20,17 @@ const Destinations = ({ post }) => {
       <InfoHeader infoText='地图'></InfoHeader>
 
       <div className='mb-[20px] flex justify-center lg:h-[calc(100vh-200px)] mt-[20px] lg:mt-0 '>
-        <img
+        {/* <img
           className='aspect-[1.82] object-contain	w-screen'
           src={post.destinations[0].destinationMap.url}
-        ></img>
+        ></img> */}
+        <ImageZoom
+          src={post.destinations[0].destinationMap.url}
+          alt='Zoom 1'
+          zoom={zoom.current}
+          background='#000'
+          className='aspect-[1.82] object-contain	w-screen'
+        />
       </div>
     </div>
   )

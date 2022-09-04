@@ -16,10 +16,12 @@
     "graphql": "^16.5.0",
     "graphql-request": "^4.3.0",
     "html-react-parser": "^3.0.1",
+    "medium-zoom": "^1.0.6",
     "moment": "^2.29.4",
     "next": "latest",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-medium-image-zoom": "^5.0.2"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
