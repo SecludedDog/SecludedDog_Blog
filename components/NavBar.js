@@ -63,19 +63,19 @@ const NavBar = () => {
         </nav>
       </div>
       <div
-        className={`fixed overflow-y-scroll bg-white top-0 left-0  right-0 z-10 mx-[80px] transition ease-in-out duration-500 ${
-          isModal ? '' : '-translate-y-full'
+        className={`fixed overflow-y-scroll bg-white top-0 left-0  right-0 z-10 lg:mx-[80px] mx-0 transition ease-in-out duration-500 ${
+          isModal ? '' : '-translate-y-full '
         } `}
       >
-        <div className='max-w-7xl  mx-auto h-screen mt-[100px]'>
+        <div className='lg:max-w-7xl  lg:mx-auto h-screen lg:mt-[20px] mt-[25px] 	'>
           {/* close icon */}
-          {/* <div className='h-[72px] text-xl flex justify-end'>
-            <button onClick={closeModal}>
-              <FontAwesomeIcon icon='fa-xmark' />
-            </button>
-          </div> */}
 
           <div className='flex flex-col items-center gap-[70px] '>
+            <div className='text-right w-full mr-[35px]'>
+              <button onClick={closeModal} className={isModal ? '' : 'hidden'}>
+                <FontAwesomeIcon icon='fa-xmark' />
+              </button>
+            </div>
             {/* destinations */}
             <div className='flex flex-col items-center'>
               <div className='bg-gray-900 h-[3px] w-[40px] mb-[15px]'></div>
@@ -84,11 +84,11 @@ const NavBar = () => {
               </div>
             </div>
             {/* destination content */}
-            <div className='grid grid-cols-2 gap-[100px]'>
+            <div className='grid lg:grid-cols-2 lg:gap-[100px] grid-cols-1 gap-[30px]'>
               {sidebarLinks.map((link) => (
                 <div
                   key={link.id}
-                  className='flex flex-col text-base items-start gap-[15px]  w-[280px]'
+                  className='flex flex-col text-base lg:items-start items-center gap-[15px]  w-[280px]'
                 >
                   <p className='font-medium'>{link.province}</p>
                   <div className='flex gap-x-[30px] gap-y-[10px] flex-wrap'>
@@ -111,7 +111,7 @@ const NavBar = () => {
               <div className='bg-gray-900 h-[3px] w-[40px] mb-[15px]'></div>
               <p className='text-lg font-medium	'>CONTACT US</p>
               <p className='mt-[30px]'>Email: xiadayu2022@gmail.com</p>
-              <p>WeChat: Cigarmoni</p>
+              <p className='mb-[30px]'>WeChat: Cigarmoni</p>
             </div>
           </div>
         </div>
