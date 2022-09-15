@@ -9,20 +9,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Divider = () => {
   return (
-    <div className='flex justify-center lg:mt-[150px] lg:mb-[150px] mb-[50px] mt-[50px]'>
-      <div className='divider  w-[450px]'>
+    <div className='flex justify-center items-center lg:mt-[150px] lg:mb-[150px] mb-[50px] mt-[50px] gap-[20px]'>
+      {/* <div className='divider  w-[450px]'>
         <FontAwesomeIcon
           className='text-gray-300 text-xl'
           icon='fa-solid fa-wave-square'
-        />
-
-        {/* <div className='inline	 flex  flex-row gap-[10px]'>
-          <div className='inline	 w-[3px] h-[10px] bg-gray-900'></div>
-          <div className='inline	 w-[3px] h-[16px] bg-gray-900'></div>
-          <div className='inline	 w-[3px] h-[10px] bg-gray-900'></div>
-        </div> */}
+        /> */}
+      <div className='h-[1.5px] lg:w-[150px] w-[80px] bg-gray-300'></div>
+      <div className='flex  flex-row gap-[10px] items-center'>
+        <div className='w-[2px] h-[12px] bg-gray-300'></div>
+        <div className='w-[2px] h-[18px] bg-gray-300'></div>
+        <div className='w-[2px] h-[12px] bg-gray-300'></div>
       </div>
+      <div className='h-[1.5px] lg:w-[150px] w-[80px] bg-gray-300'></div>
     </div>
+    // </div>
   )
 }
 

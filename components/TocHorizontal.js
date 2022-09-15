@@ -87,8 +87,8 @@ const TocHorizontal = () => {
       }`}
     >
       <div
-        className={`lg:w-[500px] bg-white w-screen  lg:text-lg lg:h-[72px] lg:mb-0 text-xs mx-auto flex justify-center items-center  h-[50px] mb-[10px] gap-[60px]  text-gray-400 transition ease-in-outduration-700 ${
-          fixed && ' transition ease-in-out	 duration-700 lg:scale-75	'
+        className={`lg:w-[500px] bg-white w-screen  lg:text-lg lg:h-[72px] lg:mb-0 text-xs mx-auto flex justify-center items-center  h-[50px] mb-[10px] gap-[60px]  text-gray-400 transition ease-in-out duration-700 scale-100 ${
+          fixed && ' transition ease-in-out	duration-700 lg:scale-75	'
         } ${isModal ? 'opacity-0 hidden' : ''}`}
         id='inlineNav'
       >

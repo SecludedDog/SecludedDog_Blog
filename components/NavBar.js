@@ -84,7 +84,7 @@ const NavBar = () => {
               </div>
             </div>
             {/* destination content */}
-            <div className='grid lg:grid-cols-2 lg:gap-[100px] grid-cols-1 gap-[30px]'>
+            <div className='grid lg:grid-cols-2 lg:gap-[100px] grid-cols-1 gap-[50px]'>
               {sidebarLinks.map((link) => (
                 <div
                   key={link.id}

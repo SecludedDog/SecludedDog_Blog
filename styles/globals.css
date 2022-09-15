@@ -46,6 +46,7 @@
 
 p {
   line-height: 1.625rem;
+  font-family: 'Noto Sans HK', sans-serif;
 }
 
 .heightTest {
@@ -98,4 +99,30 @@ p {
 .medium-zoom-overlay,
 .medium-zoom-image--opened {
   z-index: 999;
+}
+
+.half-bg {
+  background: #ffffff;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 55%,
+    #e5e7eb 55%,
+    #e5e7eb 85%,
+    #ffffff 85%,
+    #ffffff 100%
+  );
+}
+
+.index-poem > p {
+  line-height: 2em !important;
+}
+
+.group-cover-img:hover img {
+  transform: scale(1.5);
+  transition: all 20s linear;
+}
+
+.group-cover-img * {
+  transition: all 8s linear;
 }
