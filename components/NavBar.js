@@ -51,7 +51,9 @@ const NavBar = () => {
         >
           <div className='flex w-full items-center justify-between lg:text-xl text-sm transition-all ease-in-out duration-500'>
             <div className>
-              <h1>Secluded Dog</h1>
+              <h1 className='logo tracking-[2px] text-lg font-semibold	text-gray-900'>
+                <a href='/'>Secluded dog</a>
+              </h1>
             </div>
             <button onClick={openModal} className={isModal ? 'hidden' : ''}>
               <FontAwesomeIcon icon='fa-bars' />

@@ -1,10 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 
-const PageHeader = () => {
+const PageHeader = ({ title }) => {
   return (
     <Head>
-      <title>Secluded Dog</title>
+      <title>{title}</title>
 
       <link rel='preconnect' href='https://fonts.googleapis.com' />
       <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />

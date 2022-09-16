@@ -46,6 +46,9 @@
 
 p {
   line-height: 1.625rem;
+}
+
+.index p {
   font-family: 'Noto Sans HK', sans-serif;
 }
 
@@ -119,10 +122,14 @@ p {
 }
 
 .group-cover-img:hover img {
-  transform: scale(1.5);
-  transition: all 20s linear;
+  transform: scale(1.1);
+  transition: all 3s linear;
 }
 
 .group-cover-img * {
-  transition: all 8s linear;
+  transition: all 2s linear;
+}
+
+.logo {
+  font-family: 'Noto Sans HK', sans-serif;
 }

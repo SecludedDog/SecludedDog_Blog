@@ -8,6 +8,7 @@ import Overview from '../../components/Overview'
 import TocHorizontal from '../../components/TocHorizontal'
 import BigGallery from '../../components/BigGallery'
 import Info from '../../components/Info'
+import PageHeader from '../../components/PageHeader'
 
 // const data = {
 //   slug: 'shaxi',
@@ -27,7 +28,10 @@ export default function SinglePost({ post }) {
     Aos.init({ duration: 800 })
   }, [])
   return (
-    <body>
+    <>
+      <PageHeader title={post.title}></PageHeader>
+
+      {/* <body> */}
       <div className='w-screen text-sm text-gray-600'>
         <NavBar></NavBar>
         <main>
@@ -44,7 +48,8 @@ export default function SinglePost({ post }) {
         </aside>
       </div> */}
       </div>
-    </body>
+      {/* </body> */}
+    </>
   )
 }
 
