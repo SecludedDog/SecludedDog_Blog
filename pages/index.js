@@ -10,7 +10,7 @@ const Home = () => {
       {/* <body> */}
       <div className='index'>
         <div className='flex flex-col justify-center items-center w-sreen h-screen gap-[30px]'>
-          <div className=''>
+          <div className='scale-75 lg:scale-100'>
             <img src='/logo.png' className='w-[250px]'></img>
           </div>
 
@@ -52,7 +52,7 @@ const Home = () => {
 
         <div className='flex flex-col items-center mt-[200px]'>
           <div className='flex flex-col w-max mb-[8px] items-center'>
-            <div className='h-[3px] w-[20%] mb-[10px]'></div>
+            <div className='bg-gray-900 h-[3px] w-[20%] mb-[10px]'></div>
             <div className='lg:text-lg text-sm'>
               <p className='tracking-[5px]'>TOP PICKS</p>
             </div>
