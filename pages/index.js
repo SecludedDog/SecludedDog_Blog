@@ -51,25 +51,21 @@ const Home = () => {
         </div>
 
         <div className='flex flex-col items-center lg:mt-[200px] mt-[100px]'>
-          <div className='flex flex-col w-max mb-[8px] items-center'>
+          <div className='flex flex-col w-max mb-[20px] items-center'>
             <div className='bg-gray-900 h-[3px] w-[20%] mb-[10px]'></div>
             <div className='lg:text-lg text-sm'>
               <p className='tracking-[5px]'>TOP PICKS</p>
             </div>
           </div>
-          <div className='flex flex-col lg:mt-[120px] mt-[30px] lg:w-[70vw]  max-w-[1180px]  lg:mx-[50px] mx-[30px] lg:gap-[80px] gap-[20px]'>
+          <div className='flex flex-col lg:mt-[120px] mt-[50px] lg:w-[70vw]  max-w-[1180px]  lg:mx-[50px] mx-[30px] lg:gap-[80px] gap-[20px]'>
             <div className='grid lg:grid-cols-2 lg:gap-[50px] gap-[20px] '>
               <div className='flex flex-col  gap-[5px] group-cover-img'>
                 <div className='flex items-end relative '>
-                  <div className=' w-full lg:aspect-[0.95] aspect-[2] lg:mr-[8px] overflow-hidden'>
+                  <div className=' w-full lg:aspect-[0.95]  lg:mr-[8px] overflow-hidden'>
                     <a href={`/posts/${featuredPosts[0].slug}`}>
                       <img
-                        className='object-cover  object-center '
+                        className='object-cover  object-center w-[100%] lg:h-[100%] h-[30vh]'
                         src={featuredPosts[0].coverImg.url}
-                        style={{
-                          width: '100%',
-                          height: '100%',
-                        }}
                       ></img>
                     </a>
                   </div>
@@ -87,14 +83,10 @@ const Home = () => {
 
               <div className='flex flex-col  gap-[5px] group-cover-img'>
                 <div className='flex items-end gap-[20px] relative'>
-                  <div className=' w-full lg:aspect-[0.95] aspect-[2] lg:mr-[8px] overflow-hidden'>
+                  <div className=' w-full lg:aspect-[0.95]  lg:mr-[8px] overflow-hidden'>
                     <img
-                      className='object-cover  object-center'
+                      className='object-cover  object-center w-[100%] lg:h-[100%] h-[30vh]'
                       src={featuredPosts[1].coverImg.url}
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                      }}
                     ></img>
                   </div>
                   <p className=' text-xs text-gray-400 rotate-90 origin-bottom-right absolute bottom-0 right-0 tracking-[4px] hidden lg:block'>
@@ -107,14 +99,10 @@ const Home = () => {
 
             <div className='flex flex-col  gap-[5px] group-cover-img'>
               <div className='flex items-end relative'>
-                <div className=' w-full aspect-[2] lg:mr-[8px] overflow-hidden'>
+                <div className=' w-full lg:aspect-[2] lg:mr-[8px] overflow-hidden'>
                   <img
-                    className='object-cover  object-center'
+                    className='object-cover  object-center w-[100%] lg:h-[100%] h-[30vh]'
                     src={featuredPosts[2].coverImg.url}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                    }}
                   ></img>
                 </div>
                 <p className=' text-xs text-gray-400 rotate-90 origin-bottom-right absolute bottom-0 right-0 tracking-[4px] hidden lg:block'>
@@ -125,9 +113,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col items-center lg:mt-[200px] mt-[150px] lg:gap-[120px] gap-[50px]'>
+        <div className='flex flex-col items-center lg:mt-[200px] mt-[150px] lg:gap-[120px] gap-[50px] '>
           {/* destinations */}
-          <div className='flex flex-col w-max mb-[8px] items-center'>
+          <div className='flex flex-col w-max mb-[20px] items-center'>
             <div className='bg-gray-900 h-[3px] w-[20%] mb-[10px]'></div>
             <div className='lg:text-lg text-sm'>
               <p className='tracking-[5px]'>ALL DESTINATIONS</p>
