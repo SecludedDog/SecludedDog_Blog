@@ -14,7 +14,7 @@ const Home = () => {
             <img src='/logo.png' className='w-[250px]'></img>
           </div>
 
-          <div className='text-center max-w-[800px] text-gray-600 flex flex-col gap-[20px] '>
+          <div className='text-center max-w-[800px] text-gray-600 flex flex-col gap-[20px] mx-[10px] lg:mx-0'>
             <div className='index-poem'>
               <p>
                 "A quiet{' '}
@@ -52,16 +52,16 @@ const Home = () => {
 
         <div className='flex flex-col items-center mt-[200px]'>
           <div className='flex flex-col w-max mb-[8px] items-center'>
-            <div className='bg-gray-900 h-[3px] w-[20%] mb-[10px]'></div>
+            <div className='h-[3px] w-[20%] mb-[10px]'></div>
             <div className='lg:text-lg text-sm'>
               <p className='tracking-[5px]'>TOP PICKS</p>
             </div>
           </div>
-          <div className='flex flex-col mt-[120px] w-[70vw]  max-w-[1180px]  mx-[50px] gap-[80px]'>
-            <div className='grid grid-cols-2 gap-[50px] '>
+          <div className='flex flex-col mt-[120px] lg:w-[70vw]  max-w-[1180px]  lg:mx-[50px] mx-[30px] lg:gap-[80px] gap-[20px]'>
+            <div className='grid lg:grid-cols-2 lg:gap-[50px] gap-[20px] '>
               <div className='flex flex-col  gap-[5px] group-cover-img'>
                 <div className='flex items-end relative '>
-                  <div className=' w-full aspect-[0.95] mr-[8px] overflow-hidden'>
+                  <div className=' w-full lg:aspect-[0.95] aspect-[2] lg:mr-[8px] overflow-hidden'>
                     <a href={`/posts/${featuredPosts[0].slug}`}>
                       <img
                         className='object-cover  object-center '
@@ -73,12 +73,12 @@ const Home = () => {
                       ></img>
                     </a>
                   </div>
-                  <p className=' text-xs text-gray-400 rotate-90 origin-bottom-right absolute bottom-0 right-0 tracking-[4px]	'>
+                  <p className=' text-xs text-gray-400 rotate-90 origin-bottom-right absolute bottom-0 right-0 tracking-[4px]	hidden lg:block'>
                     {featuredPosts[0].title_en}
                   </p>
                 </div>
 
-                <p className='text-lg'>
+                <p className='lg:text-lg text-sm'>
                   <a href={`/posts/${featuredPosts[0].slug}`}>
                     {featuredPosts[0].title}
                   </a>
@@ -87,7 +87,7 @@ const Home = () => {
 
               <div className='flex flex-col  gap-[5px] group-cover-img'>
                 <div className='flex items-end gap-[20px] relative'>
-                  <div className=' w-full aspect-[0.95] mr-[8px] overflow-hidden'>
+                  <div className=' w-full lg:aspect-[0.95] aspect-[2] lg:mr-[8px] overflow-hidden'>
                     <img
                       className='object-cover  object-center'
                       src={featuredPosts[1].coverImg.url}
@@ -97,17 +97,17 @@ const Home = () => {
                       }}
                     ></img>
                   </div>
-                  <p className=' text-xs text-gray-400 rotate-90 origin-bottom-right absolute bottom-0 right-0 tracking-[4px]'>
+                  <p className=' text-xs text-gray-400 rotate-90 origin-bottom-right absolute bottom-0 right-0 tracking-[4px] hidden lg:block'>
                     {featuredPosts[1].title_en}
                   </p>
                 </div>
-                <p className='text-lg'>{featuredPosts[1].title}</p>
+                <p className='lg:text-lg text-sm'>{featuredPosts[1].title}</p>
               </div>
             </div>
 
             <div className='flex flex-col  gap-[5px] group-cover-img'>
               <div className='flex items-end relative'>
-                <div className=' w-full aspect-[2] mr-[8px] overflow-hidden'>
+                <div className=' w-full aspect-[2] lg:mr-[8px] overflow-hidden'>
                   <img
                     className='object-cover  object-center'
                     src={featuredPosts[2].coverImg.url}
@@ -117,11 +117,11 @@ const Home = () => {
                     }}
                   ></img>
                 </div>
-                <p className=' text-xs text-gray-400 rotate-90 origin-bottom-right absolute bottom-0 right-0 tracking-[4px]'>
+                <p className=' text-xs text-gray-400 rotate-90 origin-bottom-right absolute bottom-0 right-0 tracking-[4px] hidden lg:block'>
                   {featuredPosts[2].title_en}
                 </p>
               </div>
-              <p className='text-lg'>{featuredPosts[2].title}</p>
+              <p className='lg:text-lg text-sm'>{featuredPosts[2].title}</p>
             </div>
           </div>
         </div>
