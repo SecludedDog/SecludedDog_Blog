@@ -9,12 +9,12 @@ const Home = () => {
       <PageHeader title='Secluded dog'></PageHeader>
       {/* <body> */}
       <div className='index'>
-        <div className='flex flex-col justify-center items-center w-sreen h-screen gap-[30px]'>
+        <div className='flex flex-col justify-center items-center w-sreen h-screen lg:gap-[30px] gap-0'>
           <div className='scale-75 lg:scale-100'>
             <img src='/logo.png' className='w-[250px]'></img>
           </div>
 
-          <div className='text-center max-w-[800px] text-gray-600 flex flex-col gap-[20px] mx-[10px] lg:mx-0'>
+          <div className='text-center text-xs lg:text-sm max-w-[800px] text-gray-600 flex flex-col gap-[20px] mx-[10px] lg:mx-0'>
             <div className='index-poem'>
               <p>
                 "A quiet{' '}
@@ -50,14 +50,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='flex flex-col items-center mt-[200px]'>
+        <div className='flex flex-col items-center lg:mt-[200px] mt-[100px]'>
           <div className='flex flex-col w-max mb-[8px] items-center'>
             <div className='bg-gray-900 h-[3px] w-[20%] mb-[10px]'></div>
             <div className='lg:text-lg text-sm'>
               <p className='tracking-[5px]'>TOP PICKS</p>
             </div>
           </div>
-          <div className='flex flex-col mt-[120px] lg:w-[70vw]  max-w-[1180px]  lg:mx-[50px] mx-[30px] lg:gap-[80px] gap-[20px]'>
+          <div className='flex flex-col lg:mt-[120px] mt-[30px] lg:w-[70vw]  max-w-[1180px]  lg:mx-[50px] mx-[30px] lg:gap-[80px] gap-[20px]'>
             <div className='grid lg:grid-cols-2 lg:gap-[50px] gap-[20px] '>
               <div className='flex flex-col  gap-[5px] group-cover-img'>
                 <div className='flex items-end relative '>
@@ -125,7 +125,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col items-center mt-[200px] gap-[120px]'>
+        <div className='flex flex-col items-center lg:mt-[200px] mt-[150px] lg:gap-[120px] gap-[50px]'>
           {/* destinations */}
           <div className='flex flex-col w-max mb-[8px] items-center'>
             <div className='bg-gray-900 h-[3px] w-[20%] mb-[10px]'></div>
@@ -134,7 +134,7 @@ const Home = () => {
             </div>
           </div>
           {/* destination content */}
-          <div className='grid lg:grid-cols-2 justify-items-center gap-y-[100px] grid-cols-1 w-[70vw]  max-w-[1180px]  mx-[50px] '>
+          <div className='grid lg:grid-cols-2 justify-items-center lg:gap-y-[100px] gap-y-[50px] grid-cols-1 w-[70vw]  max-w-[1180px]  mx-[50px] '>
             {sidebarLinks.map((link) => (
               <div
                 key={link.id}
