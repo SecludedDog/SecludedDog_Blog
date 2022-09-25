@@ -6,12 +6,12 @@ const HeaderComp = ({ post }) => {
   // const categoryColors = ['bg-teal-500', 'bg-amber-500']
   return (
     <>
-      <div className='flex justify-center	'>
-        <div className='lg:max-w-[1600px] lg:mx-[80px]'>
+      <div className='flex justify-center	lg:mt-[10px]'>
+        <div className='lg:max-w-[1600px] lg:mx-[100px]'>
           {/* <div className=' grid grid-cols-11 gap-[50px]  items-end mb-[120px] mt-[20px] max-h-[50%]'> */}
           <div
             className='flex  lg:mb-[120px] mb-[50px] mt-[20px] flex-col-reverse 
-                      lg:items-end h-[calc(100vh-150px)] lg:max-h-[833px] lg:flex-row lg:gap-[50px]'
+                      lg:items-end h-[calc(100vh-160px)] lg:max-h-[833px] lg:flex-row lg:gap-[40px]'
           >
             <div className='h-full mt-[50px] lg:mt-0'>
               <img
@@ -23,8 +23,8 @@ const HeaderComp = ({ post }) => {
                 }}
               />
             </div>
-            <div className='min-w-[200px]	flex items-center	flex-col lg:items-start'>
-              <h1 className='lg:text-5xl mb-[20px] text-3xl tracking-[10px]'>
+            <div className='min-w-max		flex items-center	flex-col lg:items-start'>
+              <h1 className='lg:text-5xl mb-[24px] text-3xl tracking-[10px] text-gray-900 font-medium	'>
                 {post.pageHeader.title}
               </h1>
 

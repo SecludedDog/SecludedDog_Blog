@@ -60,8 +60,8 @@ const Home = () => {
               <p className='tracking-[5px]'>TOP PICKS</p>
             </div>
           </div>
-          <div className='flex flex-col lg:mt-[120px] mt-[50px] lg:w-[70vw]  max-w-[1180px]  lg:mx-[50px] mx-[20px] lg:gap-[80px] gap-[30px]'>
-            <div className='grid lg:grid-cols-2 lg:gap-[50px] gap-[30px] '>
+          <div className='flex flex-col lg:mt-[120px] mt-[50px] lg:w-[70vw]  max-w-[1180px]  lg:mx-[50px] mx-[20px] lg:gap-[80px] gap-[35px]'>
+            <div className='grid lg:grid-cols-2 lg:gap-[50px] gap-[35px] '>
               <div className='flex flex-col  gap-[5px] group-cover-img'>
                 <div className='flex items-end relative '>
                   <div className=' w-full lg:aspect-[0.95]  lg:mr-[8px] overflow-hidden lg:rounded-xl rounded-md'>
@@ -161,7 +161,7 @@ const Home = () => {
               <p className='tracking-[5px]'>ABOUT US</p>
             </div>
           </div>
-          <div className='text-center text-xs lg:text-sm text-gray-500 about-us-font max-w-[800px] mx-[20px]'>
+          <div className='text-center text-sm text-gray-500 about-us-font max-w-[800px] mx-[20px]'>
             <p>我们是两个体力不佳的自驾游和散步爱好者。</p>
             <p>
               在我们的学生时代，网速是慢的，互联网是自由开放的，博客是流行的，文字是长的，旅行前是要做攻略的。
