@@ -43,7 +43,7 @@ const NavBar = () => {
   const { isModal, closeModal, openModal } = useGlobalContext()
   return (
     <>
-      <div className='mx-[40px] lg:sticky lg:top-0 z-20 mb-[20px] lg:mb-0'>
+      <div className='mx-[40px] lg:sticky lg:top-0 z-30 mb-[20px] lg:mb-0'>
         <nav
           className={`max-w-[1600px]  mx-auto  flex justify-center h-[72px] transition-all ease-in-out duration-500 bg-white  
         

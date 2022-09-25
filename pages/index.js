@@ -60,11 +60,11 @@ const Home = () => {
               <p className='tracking-[5px]'>TOP PICKS</p>
             </div>
           </div>
-          <div className='flex flex-col lg:mt-[120px] mt-[50px] w-[70vw]  max-w-[1180px]  lg:mx-[50px] mx-[30px] lg:gap-[80px] gap-[20px]'>
-            <div className='grid lg:grid-cols-2 lg:gap-[50px] gap-[20px] '>
+          <div className='flex flex-col lg:mt-[120px] mt-[50px] lg:w-[70vw]  max-w-[1180px]  lg:mx-[50px] mx-[20px] lg:gap-[80px] gap-[30px]'>
+            <div className='grid lg:grid-cols-2 lg:gap-[50px] gap-[30px] '>
               <div className='flex flex-col  gap-[5px] group-cover-img'>
                 <div className='flex items-end relative '>
-                  <div className=' w-full lg:aspect-[0.95]  lg:mr-[8px] overflow-hidden rounded-xl'>
+                  <div className=' w-full lg:aspect-[0.95]  lg:mr-[8px] overflow-hidden lg:rounded-xl rounded-md'>
                     <a href={`/posts/${featuredPosts[0].slug}`}>
                       <img
                         className='object-cover  object-center w-[100%] lg:h-[100%] h-[30vh]'
@@ -86,7 +86,7 @@ const Home = () => {
 
               <div className='flex flex-col  gap-[5px] group-cover-img'>
                 <div className='flex items-end gap-[20px] relative'>
-                  <div className=' w-full lg:aspect-[0.95]  lg:mr-[8px] overflow-hidden rounded-xl'>
+                  <div className=' w-full lg:aspect-[0.95]  lg:mr-[8px] overflow-hidden lg:rounded-xl rounded-md'>
                     <img
                       className='object-cover  object-center w-[100%] lg:h-[100%] h-[30vh]'
                       src={featuredPosts[1].coverImg.url}
@@ -104,7 +104,7 @@ const Home = () => {
 
             <div className='flex flex-col  gap-[5px] group-cover-img'>
               <div className='flex items-end relative'>
-                <div className=' w-full lg:aspect-[2] lg:mr-[8px] overflow-hidden rounded-xl'>
+                <div className=' w-full lg:aspect-[2] lg:mr-[8px] overflow-hidden lg:rounded-xl rounded-md'>
                   <img
                     className='object-cover  object-center w-[100%] lg:h-[100%] h-[30vh] 	'
                     src={featuredPosts[2].coverImg.url}
