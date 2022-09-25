@@ -24,7 +24,7 @@ const HeaderComp = ({ post }) => {
               />
             </div>
             <div className='min-w-[200px]	flex items-center	flex-col lg:items-start'>
-              <h1 className='lg:text-5xl mb-[20px] text-3xl'>
+              <h1 className='lg:text-5xl mb-[20px] text-3xl tracking-[10px]'>
                 {post.pageHeader.title}
               </h1>
 

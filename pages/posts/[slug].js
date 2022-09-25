@@ -9,6 +9,7 @@ import TocHorizontal from '../../components/TocHorizontal'
 import BigGallery from '../../components/BigGallery'
 import Info from '../../components/Info'
 import PageHeader from '../../components/PageHeader'
+import Footer from '../../components/Footer'
 
 // const data = {
 //   slug: 'shaxi',
@@ -41,6 +42,7 @@ export default function SinglePost({ post }) {
           <BigGallery post={post}></BigGallery>
           <Info post={post}></Info>
         </main>
+        <Footer></Footer>
         {/* </div> */}
         {/* <div className='pt-10'>
         <aside className='col-span-1 overflow-auto sticky top-0'>

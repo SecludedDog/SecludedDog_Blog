@@ -43,7 +43,7 @@ const NavBar = () => {
   const { isModal, closeModal, openModal } = useGlobalContext()
   return (
     <>
-      <div className='mx-[20px] lg:sticky lg:top-0 z-20 mb-[20px] lg:mb-0'>
+      <div className='mx-[40px] lg:sticky lg:top-0 z-20 mb-[20px] lg:mb-0'>
         <nav
           className={`max-w-[1600px]  mx-auto  flex justify-center h-[72px] transition-all ease-in-out duration-500 bg-white  
         
@@ -82,18 +82,20 @@ const NavBar = () => {
             <div className='flex flex-col items-center'>
               <div className='bg-gray-900 h-[3px] w-[40px] mb-[15px]'></div>
               <div>
-                <p className='text-lg font-medium	'>DESTINATIONS</p>
+                <p className='text-lg font-medium	font-en tracking-[5px]'>
+                  DESTINATIONS
+                </p>
               </div>
             </div>
             {/* destination content */}
-            <div className='grid lg:grid-cols-2 lg:gap-[100px] grid-cols-1 gap-[50px]'>
+            <div className='grid lg:grid-cols-2 justify-items-center lg:gap-[100px] grid-cols-1 gap-[50px]'>
               {sidebarLinks.map((link) => (
                 <div
                   key={link.id}
-                  className='flex flex-col text-base lg:items-start items-center gap-[15px]  w-[280px]'
+                  className='flex flex-col text-base items-center gap-[15px]  w-[280px]'
                 >
                   <p className='font-medium'>{link.province}</p>
-                  <div className='flex gap-x-[30px] gap-y-[10px] flex-wrap'>
+                  <div className='flex gap-x-[30px] gap-y-[10px] flex-wrap justify-center'>
                     {link.cities.map((city) => (
                       <p key={city.id} className='text-gray-500 text-sm '>
                         <a
@@ -111,9 +113,15 @@ const NavBar = () => {
             {/* contact us */}
             <div className='flex flex-col items-center'>
               <div className='bg-gray-900 h-[3px] w-[40px] mb-[15px]'></div>
-              <p className='text-lg font-medium	'>CONTACT US</p>
-              <p className='mt-[30px]'>Email: xiadayu2022@gmail.com</p>
-              <p className='mb-[30px]'>WeChat: Cigarmoni</p>
+              <p className='text-lg font-medium	font-en tracking-[5px]'>
+                CONTACT US
+              </p>
+              {/* <p className='mt-[30px] font-en text-gray-500 lg:text-sm text-xs'>
+                Email: xiadayu2022@gmail.com
+              </p>
+              <p className='mb-[30px] font-en text-gray-500 lg:text-sm text-xs'>
+                WeChat: Cigarmoni
+              </p> */}
             </div>
           </div>
         </div>

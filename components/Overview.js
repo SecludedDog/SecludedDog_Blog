@@ -20,7 +20,9 @@ const Overview = ({ post }) => {
                 </a>
               ),
               bold: ({ children }) => <strong>{children}</strong>,
-              p: ({ children }) => <p className='mb-[20px]'>{children}</p>,
+              p: ({ children }) => (
+                <p className='mb-[20px] text-[15px] leading-8	'>{children}</p>
+              ),
             }}
           />
         </div>
