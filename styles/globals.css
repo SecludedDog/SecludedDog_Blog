@@ -45,14 +45,13 @@
   }
 
   /* Safari-only */
-  @supports (-webkit-hyphens: none) {
+  /* @supports (-webkit-hyphens: none) {
     #gallery,
     #overview,
     #info {
-      /* padding-top: 120px; */
       margin-top: 120px;
     }
-  }
+  } */
 }
 
 /* p {

@@ -81,7 +81,7 @@ const TocHorizontal = () => {
 
   return (
     <div
-      className={`z-40 pt-[8px] ${
+      className={`z-40 lg:pt-[8px] ${
         fixed &&
         'sticky top-0  transition ease-in-out	duration-700 lg:max-w-[1000px] mx-auto'
       }`}

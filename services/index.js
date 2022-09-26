@@ -32,12 +32,7 @@ export const getPostDetails = async (slug) => {
           }
           title
         }
-        gallery {
-          caption
-          photo {
-            url
-          }
-        }
+      
 
         restaurants {
             id
@@ -84,12 +79,8 @@ export const getPostDetails = async (slug) => {
 
 
         title
-        overview
-        featuredImg {
-            url
-            width
-            height
-        }
+      
+    
         slug
         author
         createdAt
