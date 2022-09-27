@@ -17,14 +17,14 @@ const BigGallery = ({ post }) => {
       <div className='lg:max-w-[1600px] lg:mx-[80px] min-w-0'>
         {post.bigGallery.map((item) => (
           <div
-            className='lg:grid-cols-6 lg:grid lg:mb-[80px] lg:gap-[80px] lg:items-top	
+            className='lg:grid-cols-6 lg:grid lg:mb-[80px] lg:gap-[40px] lg:items-top	
             mb-[50px]'
             data-aos='fade'
             data-aos-offset={50}
           >
             <div className='lg:col-span-2 mx-[30px]'>
               <div className='flex flex-col w-max mb-[8px]'>
-                <div className='bg-gray-900 h-[3px] w-auto mb-[3px]'></div>
+                <div className='bg-gray-900 lg:h-[3px] h-[2px] w-auto mb-[3px]'></div>
                 <div className='lg:text-lg text-sm'>{item.title}</div>
               </div>
               {/* <p>{item.photoDescription}</p> */}
@@ -42,14 +42,16 @@ const BigGallery = ({ post }) => {
                   ),
                   bold: ({ children }) => <strong>{children}</strong>,
                   p: ({ children }) => (
-                    <p className='mb-[20px] text-gray-400'>{children}</p>
+                    <p className='mb-[20px] leading-7 text-gray-500 text-[15px] text-justify'>
+                      {children}
+                    </p>
                   ),
                 }}
               />
             </div>
-            <div className='lg:col-span-4'>
+            <div className='lg:col-span-4 bg-red-100'>
               <img
-                className='lg:max-h-[calc(100vh-150px)] w-full object-contain	'
+                className='lg:max-h-[calc(100vh-120px)] w-full object-contain	'
                 src={item.photo.url}
               ></img>
             </div>

@@ -69,7 +69,7 @@ const TocHorizontal = () => {
           {tag.toUpperCase()}
         </a>
         <div
-          className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
+          className={`w-0 lg:h-[3px] h-[2px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
         group-hover:transition-width group-hover:ease-in-out group-hover:duration-700 group-hover:w-[24px] ${
           activeId === tag &&
           'w-[24px] bg-gray-800 transition-all ease-in-out duration-700'
@@ -121,7 +121,7 @@ const TocHorizontal = () => {
             OVERVIEW
           </a>
           <div
-            className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
+            className={`w-0 lg:h-[3px] h-[2px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
         group-hover:transition-width group-hover:ease-in-out group-hover:duration-700 group-hover:w-[24px] ${
           activeId === 'overview' &&
           'w-[24px] bg-gray-800 transition-all ease-in-out duration-700 '
@@ -148,7 +148,7 @@ const TocHorizontal = () => {
             GALLERY
           </a>
           <div
-            className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
+            className={`w-0 lg:h-[3px] h-[2px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
         group-hover:transition-width group-hover:ease-in-out group-hover:duration-700 group-hover:w-[24px] ${
           activeId === 'gallery' &&
           'w-[24px] bg-gray-800 transition-all ease-in-out duration-700 '
@@ -175,7 +175,7 @@ const TocHorizontal = () => {
             INFO
           </a>
           <div
-            className={`w-0 h-[3px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
+            className={`w-0 lg:h-[3px] h-[2px] mx-auto bg-gray-400 transition-width ease-in-out duration-700
         group-hover:transition-width group-hover:ease-in-out group-hover:duration-700 group-hover:w-[24px] ${
           activeId === 'info' &&
           'w-[24px] bg-gray-800 transition-all ease-in-out duration-700 '

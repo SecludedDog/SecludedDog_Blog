@@ -5,7 +5,7 @@ import Divider from './Divider'
 const Overview = ({ post }) => {
   return (
     <div id='overview' className=' flex justify-center  '>
-      <div className='md:mx-[80px] md:max-w-[750px] md:mt-[80px] min-w-0	mx-[30px]'>
+      <div className='md:mx-[80px] md:max-w-[750px] md:mt-[80px] min-w-0	mx-[30px] '>
         <div>
           <RichText
             content={post.richtext.raw}
@@ -21,7 +21,9 @@ const Overview = ({ post }) => {
               ),
               bold: ({ children }) => <strong>{children}</strong>,
               p: ({ children }) => (
-                <p className='mb-[20px] text-[15px] leading-8	'>{children}</p>
+                <p className='mb-[20px] leading-8  text-[15px] font-weight'>
+                  {children}
+                </p>
               ),
             }}
           />
