@@ -18,8 +18,8 @@ const Home = () => {
   // const [height, setHeight] = useState(0)
 
   const controlOpacity = () => {
-    setY(window.scrollY)
-    setHeight(window.innerHeight)
+    // setY(window.scrollY)
+    // setHeight(window.innerHeight)
     setOpacity(
       Math.max(
         (window.innerHeight - window.scrollY - 200) /
