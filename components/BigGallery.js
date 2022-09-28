@@ -25,7 +25,9 @@ const BigGallery = ({ post }) => {
             <div className='lg:col-span-2 mx-[30px]'>
               <div className='flex flex-col w-max mb-[8px]'>
                 <div className='bg-gray-900 lg:h-[3px] h-[2px] w-auto mb-[3px]'></div>
-                <div className='lg:text-lg text-sm'>{item.title}</div>
+                <div className='lg:text-base text-sm text-[#333]'>
+                  {item.title}
+                </div>
               </div>
               {/* <p>{item.photoDescription}</p> */}
               <RichText

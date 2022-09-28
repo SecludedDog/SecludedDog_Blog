@@ -8,7 +8,7 @@ const InfoHeader = ({ infoText }) => {
         <div>
           <h2
             id='restaurants'
-            className='lg:text-2xl text-xl text-gray-800 tracking-[10px]'
+            className='lg:text-[20px] text-xl text-gray-800 tracking-[10px] text-[#111]'
           >
             {infoText}
           </h2>

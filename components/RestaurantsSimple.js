@@ -30,7 +30,7 @@ const RestaurantsSimple = ({ post }) => {
                     <Link href={item.dianpingUrl}>
                       <a
                         target='_blank'
-                        className='hover:underline hover:underline-offset-4 font-bold'
+                        className='hover:underline hover:underline-offset-4 hover:decoration-2 text-[#333] font-medium text-[16px] leading-7'
                       >
                         {item.restaurantName}
                       </a>
@@ -38,7 +38,9 @@ const RestaurantsSimple = ({ post }) => {
                   </div>
 
                   <div className='flex flex-row '>
-                    <p className=''>{item.description}</p>
+                    <p className='text-[15px] leading-7 text-[#333]'>
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               </div>

@@ -35,7 +35,11 @@ const Transport = ({ post }) => {
               </a>
             ),
             bold: ({ children }) => <strong>{children}</strong>,
-            p: ({ children }) => <p className='mb-[20px]'>{children}</p>,
+            p: ({ children }) => (
+              <p className='mb-[40px] leading-7 text-[#333] text-[15px]'>
+                {children}
+              </p>
+            ),
           }}
         />
       </div>
