@@ -49,7 +49,7 @@ const Home = () => {
             <img src='/logo.png' className='w-[250px]'></img>
           </div>
 
-          <div className='text-center text-xs lg:text-sm max-w-[800px] text-gray-600 flex flex-col gap-[20px] mx-[10px] lg:mx-0 '>
+          <div className='text-center text-xs lg:text-[16px] max-w-[800px] text-gray-600 flex flex-col gap-[20px] mx-[10px] lg:mx-0 '>
             <div className='index-poem open-sans-i'>
               <p>
                 "A quiet{' '}

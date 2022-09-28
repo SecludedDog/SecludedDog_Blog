@@ -14,7 +14,7 @@ const TocHorizontal = () => {
   const [fixed, setFixed] = useState(false)
 
   const controlNavbar = () => {
-    if (window.scrollY > window.innerHeight) {
+    if (window.scrollY > window.innerHeight - 10) {
       setFixed(true)
     } else {
       setFixed(false)
@@ -93,7 +93,7 @@ const TocHorizontal = () => {
         id='inlineNav'
       > */}
       <div
-        className={`lg:max-w-[1000px] bg-white w-screen  lg:text-sm lg:h-[60px] lg:mb-0 text-xs mx-auto flex justify-center items-center  h-[50px] mb-[10px] gap-[60px]  text-gray-400 transition ease-in-out duration-700 tracking-[2px] ${
+        className={`lg:max-w-[1000px] bg-white w-screen  lg:text-sm lg:h-[60px] lg:mb-0 text-xs mx-auto flex justify-center items-center  h-[60px] mb-[10px] gap-[60px]  text-gray-400 transition ease-in-out duration-700 tracking-[2px] ${
           fixed && ' transition ease-in-out	duration-700 	'
         } ${isModal ? 'opacity-0 hidden' : ''}`}
         id='inlineNav'
