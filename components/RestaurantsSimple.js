@@ -19,7 +19,7 @@ const RestaurantsSimple = ({ post }) => {
       data-aos-offset={50}
       className='mx-auto max-w-[750px] mb-[300px]'
     >
-      <InfoHeader infoText='吃吃喝喝逛逛'></InfoHeader>
+      <InfoHeader infoText=' 吃吃喝喝逛逛'></InfoHeader>
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-x-[100px] gap-y-[40px] lg:mt-[100px] mt-[50px] mx-[30px] lg:mx-0'>
         {post.restaurants.map(
           (item) =>

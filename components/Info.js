@@ -8,7 +8,7 @@ const Info = ({ post }) => {
   return (
     <div id='info'>
       <Destinations post={post}></Destinations>
-      <Transport post={post}></Transport>
+      {post.transport && <Transport post={post}></Transport>}
       <RestaurantsSimple post={post}></RestaurantsSimple>
     </div>
   )

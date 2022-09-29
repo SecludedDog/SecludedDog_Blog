@@ -34,13 +34,15 @@ const Destinations = ({ post }) => {
           className='aspect-[1.82] object-contain	w-screen'
           src={post.destinations[0].destinationMap.url}
         ></img> */}
-        <ImageZoom
-          src={post.destinations[0].destinationMap.url}
-          alt='Zoom 1'
-          zoom={zoom.current}
-          background='#000'
-          className='aspect-[1.82] object-contain	w-screen'
-        />
+        {post.destinations[0] && (
+          <ImageZoom
+            src={post.destinations[0].destinationMap.url}
+            alt='Zoom 1'
+            zoom={zoom.current}
+            background='#000'
+            className='aspect-[1.82] object-contain	w-screen'
+          />
+        )}
       </div>
     </div>
   )

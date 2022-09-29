@@ -184,14 +184,14 @@ const Home = () => {
                   key={link.id}
                   className=' flex flex-col text-base  items-center gap-[40px]  w-[350px]'
                 >
-                  <p className='text-[18px] text-[#000] tracking-[4px]'>
+                  <p className='lg:text-[16px] text-[15px] text-[#000] tracking-[4px]'>
                     {link.province}
                   </p>
                   <div className='flex gap-x-[40px] gap-y-[40px] flex-wrap justify-center'>
                     {link.cities.map((city) => (
                       <p
                         key={city.id}
-                        className='text-gray-500 text-[18px] tracking-[4px] text-[#666666]'
+                        className='text-gray-500 lg:text-[18px] text-[15px] tracking-[4px] text-[#666666]'
                       >
                         <a
                           href={city.url}
@@ -217,7 +217,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className='text-center text-sm text-gray-500 about-us-font max-w-[800px] mx-[20px] lg:mt-[80px] text-[16px] '>
+            <div className='text-center text-gray-500 about-us-font max-w-[800px] mx-[20px] lg:mt-[80px] lg:text-[16px] text-[15px] leading-7'>
               <p>我们是两个体力不佳的自驾游和散步爱好者。</p>
               <p>
                 在我们的学生时代，网速是慢的，互联网是自由开放的，博客是流行的，文字是长的，旅行前是要做攻略的。
