@@ -14,7 +14,7 @@ const BigGallery = ({ post }) => {
       className='flex justify-center lg:mt-[100px] mt-[20px] lg:mb-[30px]'
       id='gallery'
     >
-      <div className='lg:max-w-[1600px] lg:mx-[80px] min-w-0'>
+      <div className='lg:max-w-[1500px] lg:mx-[80px] min-w-0'>
         {post.bigGallery.map((item) => (
           <div
             className='lg:grid-cols-6 lg:grid lg:mb-[80px] lg:gap-[40px] lg:items-top	

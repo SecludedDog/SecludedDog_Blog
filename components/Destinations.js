@@ -25,7 +25,7 @@ const Destinations = ({ post }) => {
     <div
       data-aos='fade'
       data-aos-offset={50}
-      className='lg:mb-[200px] mb-[100px] lg:mx-[80px] max-w-[1600px] lg:mt-[100px] mt-[20px]'
+      className='lg:mb-[200px] mb-[100px] lg:mx-[80px] max-w-[1500px] lg:mt-[100px] mt-[20px]'
     >
       <InfoHeader infoText='地图'></InfoHeader>
 

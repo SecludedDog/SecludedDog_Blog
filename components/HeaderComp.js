@@ -7,7 +7,7 @@ const HeaderComp = ({ post }) => {
   return (
     <>
       <div className='flex justify-center	lg:mt-[10px]'>
-        <div className='lg:max-w-[1600px] lg:mx-[100px]'>
+        <div className='lg:max-w-[1500px] lg:mx-[100px]'>
           {/* <div className=' grid grid-cols-11 gap-[50px]  items-end mb-[120px] mt-[20px] max-h-[50%]'> */}
           <div
             className='flex  lg:mb-[120px] mb-[50px] mt-[20px] flex-col-reverse 
