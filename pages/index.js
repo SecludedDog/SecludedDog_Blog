@@ -80,7 +80,7 @@ const Home = () => {
             </div>
             <div className='open-sans'>
               <p className='text-[25px]'>. . .</p>
-              <p className='mt-[20px]'>Lev Tolstoy</p>
+              <p className='mt-[20px] text-xs lg:text-[16px]'>Lev Tolstoy</p>
             </div>
           </div>
         </div>
