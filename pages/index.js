@@ -42,7 +42,7 @@ const Home = () => {
         <NavBar className='z-50'></NavBar>
         {/* <body> */}
         <div
-          className=' fixed lg:top-[72px] top-[40px] bottom-0 left-0 right-0 flex flex-col justify-center items-center w-sreen h-[calc(100vh-100px)] 2xl:gap-[30px] gap-0'
+          className=' fixed lg:top-[72px] top-[30px] bottom-0 left-0 right-0 flex flex-col justify-center items-center w-sreen h-[calc(100vh-100px)] 2xl:gap-[30px] gap-0'
           style={{ opacity: opacity }}
         >
           <div className='scale-75 2xl:scale-100 lg:scale-90'>
