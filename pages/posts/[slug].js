@@ -23,7 +23,7 @@ export default function SinglePost({ post }) {
   //       setPosts(newPosts)
   //     })
   //   }, [])
-  console.log(`hello this is post details ${post}`)
+  console.log(post)
 
   useEffect(() => {
     Aos.init({ duration: 800 })
