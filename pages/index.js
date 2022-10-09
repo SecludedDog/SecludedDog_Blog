@@ -130,7 +130,7 @@ const Home = () => {
                     data-aos-offset='80'
                   >
                     <div className=' w-full lg:aspect-[0.95]  lg:mr-[8px] overflow-hidden lg:rounded-xl rounded-md'>
-                      <a href={`/posts/${featuredPosts[0].slug}`}>
+                      <a href={`/posts/${featuredPosts[1].slug}`}>
                         <img
                           className='object-cover  object-center w-[100%] lg:h-[100%] h-[30vh]'
                           src={featuredPosts[1].coverImg.url}
