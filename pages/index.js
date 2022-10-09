@@ -130,17 +130,21 @@ const Home = () => {
                     data-aos-offset='80'
                   >
                     <div className=' w-full lg:aspect-[0.95]  lg:mr-[8px] overflow-hidden lg:rounded-xl rounded-md'>
-                      <img
-                        className='object-cover  object-center w-[100%] lg:h-[100%] h-[30vh]'
-                        src={featuredPosts[1].coverImg.url}
-                      ></img>
+                      <a href={`/posts/${featuredPosts[0].slug}`}>
+                        <img
+                          className='object-cover  object-center w-[100%] lg:h-[100%] h-[30vh]'
+                          src={featuredPosts[1].coverImg.url}
+                        ></img>
+                      </a>
                     </div>
                     <p className=' text-xs text-gray-400 rotate-90 origin-bottom-right absolute bottom-0 right-0 tracking-[7px] hidden lg:block font-medium	'>
                       {featuredPosts[1].title_en}
                     </p>
                   </div>
                   <p className='lg:text-lg text-sm feature-title-font tracking-[4px] mt-[8px]'>
-                    {featuredPosts[1].title}
+                    <a href={`/posts/${featuredPosts[1].slug}`}>
+                      {featuredPosts[1].title}
+                    </a>
                   </p>
                 </div>
               </div>

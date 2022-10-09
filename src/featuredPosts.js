@@ -14,7 +14,7 @@ export const featuredPosts = [
     title: '云南·西双版纳',
     title_en: 'YUNNAN·XISHUANGBANNA',
     coverImg: {
-      url: 'https://media.graphassets.com/cl8muvy6x384m0aur5h6f7lwg',
+      url: 'https://media.graphassets.com/GvcQQwtuRsuEHL3RZV3U',
     },
   },
   {
